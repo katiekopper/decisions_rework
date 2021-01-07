@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block title %}Create Game{% endblock title %}
+
+{% block content %}
+<h1>Create Game</h1>
+
+{% if submitted %}
+    <p class="success">
+     Your Decisions Game has been created. Thank you.
+</p>
+
+{% else %}
+   <form action="" method="post" novalidate>
+   <table>
+     {{ form.as_table }}
+     <tr>
+       <td>&nbsp;</td>
+       <td><input type="submit" value="Submit"></td>
+     </tr>
+   </table>
+   {% csrf_token %}
+   </form>
+ {% endif %}
+<a href="/dashboard">Cancel</a>
+ {% endblock content %}

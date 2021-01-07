@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Question1{% endblock title %}
+
+{% block content %}
+<div class = "c">
+<h3>Current Funds:$ 500</h3>
+</div>
+<h1>Will I take the more physically demanding, <br/>higher paying construction job, or the office job?</h1>
+
+<style>
+.button {
+  color: black;
+  padding: 20px 42px;
+  text-align: center;
+  font-size: 20px;
+  margin: 15px 60px;
+}
+
+.button1 {background-color: #DC4C4C;}
+.button2 {background-color: #A4E167;}
+</style>
+<body>
+<a href="/endScreen" class="button button1">Construction Job</a>
+<a href="/endScreen" class="button button2">Office Job</a>
+
+{% endblock content %}

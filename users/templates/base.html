@@ -1,0 +1,58 @@
+<style>
+div.a {
+  text-align: center;
+}
+
+div.b {
+  text-align: left;
+}
+
+div.c {
+  text-align: right;
+}
+
+div.d {
+  text-align: justify;
+}
+    label, input {
+        display: block;
+    }
+    span.helptext {
+        display: none;
+    }
+
+a:link, a:visited {
+  background-color:rgb(162,162,162);
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color:rgb(204,46,64);;
+}
+
+.mainprogress div{
+    padding:0;
+    margin:0;
+    float: left;
+}
+
+</style>
+
+<div class = "a", style = "background-color:rgb(0,0,0);">
+<br>
+<h1>
+<a href="{% url 'dashboard'%}" color: white>
+Welcome to the Decisions Game</a></h1>
+<br>
+</div>
+<div class= "a", style="background-color:rgb(115,0,10);"">
+<br>
+<h2 style = "color:rgb(255,255,255)">You can experience part of the game without login !                   </h2>
+<br></div>
+
+{% block content %}
+{% endblock %}
